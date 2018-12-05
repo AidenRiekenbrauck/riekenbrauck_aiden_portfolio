@@ -1,0 +1,44 @@
+.navMain
+{
+    display: none;
+}
+
+@media screen and (min-width: 64em) {
+
+.navMain
+{
+    z-index: 20;
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    padding: 5px 0px;
+    width: 100%;
+    background-color: rgba(92, 92, 92, 0.089);
+}
+
+.navMain:hover
+{
+    background-color: rgba(48, 48, 48, 0.356);
+    transition-duration: .6s;
+}
+
+.navMain ul
+{
+    list-style-type: none;
+    text-align: left;
+}
+.navMain ul li
+{
+    display: inline-block;
+    margin: 0% 2%;
+}
+
+.navMain a
+{
+    color: white;
+    text-decoration: none;
+    font-family: sub_header;
+    font-size: 10px;
+  text-transform: uppercase;
+}
+}

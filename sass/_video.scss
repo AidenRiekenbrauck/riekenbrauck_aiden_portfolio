@@ -1,0 +1,79 @@
+/*this class will hide elements on our page*/
+.promoVid {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 50px 1fr 50px;
+	grid-gap: 0;
+}
+
+#vidThumb {
+	grid-column: 1 / 4;
+	width: 100%;
+}
+
+.hiddenMobile {
+	display: none;
+}
+
+.bannerVid {
+	width: 100%;
+	z-index: 0;
+	grid-column: 1 / span 3;
+	grid-row: 1 / span 2;
+}
+#buttonLeft {
+	grid-column: 1;
+	grid-row: 2;
+	justify-self: end;
+	z-index: 1;
+	padding-left: 20px;
+	padding-bottom: 15px;
+	opacity: 0.6;
+	transition: all 0.75s linear;
+}
+#buttonRight {
+	grid-column: 3;
+	grid-row: 2;
+	justify-self: start;
+	z-index: 1;
+	padding-right: 20px;
+	padding-bottom: 15px;
+	opacity: 0.6;
+	transition: all 0.75s linear;
+}
+.vidBut {
+	height: 30px;
+	width: 30px;
+}
+.pause, .play {
+	grid-column-start: 1;
+}
+.mute, .unmute {
+	grid-column-start: 3;
+}
+/*END VIDEO*/
+
+@media screen and (min-width: 768px) {
+
+	.hiddenMobile {
+		display: block;
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	#vidThumb {
+		display: none;
+	}
+
+
+	.displayBox {
+		grid-template-columns: repeat(3, 1fr);
+		grid-auto-flow: row;
+		grid-row-gap: 5px;
+	}
+}
+
+
+

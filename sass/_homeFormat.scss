@@ -45,17 +45,16 @@ margin-top: 8%;
 }
 
 #contactForm {
-    margin-top: 10px;
   margin: 0 auto;
   
 }
 
-#contactForm input, textarea {
+#contactForm input, textarea, .submitForm  {
   letter-spacing: 2px;
   font: 200 1em/1.1em 'Helvetica Neue', sans-serif;
   
   color: #000;
-  background-color: RGBA(204, 204, 204, .1);
+  background-color: RGBA(204, 204, 204, .5);
 
   outline: none; border: none;
 
@@ -64,6 +63,7 @@ margin-top: 8%;
   padding: 1em;
   width: 90%;
   max-width: 400px;
+  transition-duration: .5s;
 }
 
 #contactForm textarea {
@@ -79,34 +79,46 @@ background-color: RGBA(254, 191, 4, 1);
 }
 
 ::-webkit-input-placeholder {
-  color: #777;
+  color: white;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-  color: #777; 
+  color: white; 
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-color: #777; 
+color: white; 
 }
 
 :-ms-input-placeholder {  
-   color: #777;
+   color: white;
 }
 
 
+.submitForm
+{
+    background-color: RGBA(204, 204, 204, .5);
+    color: white;
+    padding-bottom: 10px;
+}
+
+#submitForm *:hover {
+    background-color: RGBA(254, 191, 4, 1);
+    cursor: pointer;
+    }
+
 .footer
 {
-    background-color: RGBA(204, 204, 204, 1);
+    
 
     text-align: center;
     width: 100%;
     grid-column: 1;
-    background-color: gray;
+    background-color: rgb(26, 26, 26);
     position: absolute;
     margin:  0 auto;
     height: 100px;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .footer ul
@@ -124,7 +136,17 @@ color: #777;
 .socialIcon{
     height: 30px;
     width: 30px;
+    left: 0;
 }
 
-
-
+.contactMe
+{
+    
+    padding-top: 20vh;
+}
+.contactMe h1{
+    font-family: sub_header;
+    font-size: 20px;
+    text-align: center;
+    filter: opacity(.6);
+}

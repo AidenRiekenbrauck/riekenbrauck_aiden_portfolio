@@ -6,51 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <link href="css/main.css" rel="stylesheet" type="text/css">
 <link href="css/animate.css" rel="stylesheet" type="text/css">
+
     
 
 </head>
-<body class="indexBody">
-        <div id="app">
-                <div id="nav-btn" class="change" >
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                  </div>
-                  
-                <nav id="navbar" class="hide">
-                
-                <h1 class="hidden">Header Navigation</h1>
-                
-                <!-- MOBILE -->
-                <ul class="nav-links">
-                 <li><a class="nav-link blur1" href="index.html">Home</a></li> 
-                 <li><a class="nav-link blur2" href="gallery.html">Gallery</a></li> 
-                 <li><a class="nav-link blur4" href="contact.html">Contact</a></li> 
-                 <li><a class="nav-link blur5" href="about.html">About</a></li> 
-                </ul>
-                
-                </nav>
-            
-                <nav class="navMain">
-            <h1 class="hide navMain">navigation scale</h1>
-            <ul class="navDesk">
-            <li><a class="navDeskLink" href="index.html">Home</a></li> 
-            <li><a class="navDeskLink" href="gallery.html">Gallery</a></li> 
-            <li><a class="navDeskLink" href="contact.html">Contact</a></li> 
-            <li><a class="navDeskLink" href="about.html">About</a></li> 
-            </ul>
-            </nav>
-                </div>
+<body class="indexBody w3-black">
+    <div id="app">
+        
+        <div id="nav-btn" class="change" >
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          
+        <nav id="navbar" class="hide">
+        
+        <h1 class="hide">Header Navigation</h1>
+        
+        <!-- MOBILE -->
+        <ul class="nav-links">
+         <li><a class="nav-link blur1" href="index.html">Home</a></li> 
+         <li><a class="nav-link blur2" href="gallery.html">Gallery</a></li> 
+         <li><a class="nav-link blur2" href="video.html">Video</a></li> 
+         <li><a class="nav-link blur4" href="contact.html">Contact</a></li> 
+         <li><a class="nav-link blur5" href="about.html">About</a></li> 
+        </ul>
+        
+        </nav>
+
+        <nav class="navMain">
+    <h1 class="hide navMain">navigation scale</h1>
+    <ul class="navDesk">
+    <li><a class="navDeskLink" href="index.html">Home</a></li> 
+    <li><a class="navDeskLink" href="gallery.html">Gallery</a></li> 
+    <li><a class="navDeskLink" href="video.html">Video</a></li> 
+    <li><a class="navDeskLink" href="contact.html">Contact</a></li> 
+    <li><a class="navDeskLink" href="about.html">About</a></li> 
+   </ul>
+   
+</nav>
+        </div>
             </div>
             
             <!-- Header -->
             <header class=" w3-center">
             
+
+
+              
               <div class="profileImg">
-                <img src="images/contact_bckgrd.png" alt="profile">
+                  <div class="contactMe wow fadeIn"  data-wow-duration="3s">
+                      <h1>Contact Me</h1>
+                    </div>
+                  <form id="contactForm"  action="admin/scripts/sendEmail.php" method="POST">
+           
+                    <input class="formInput" type="text" id="name" name="name" autocorrect="off" placeholder="Name"/>
+            
+                  
+                    <input class="formInput" type="email" name="email" id="email" autocapitalize="off" autocorrect="off" placeholder="Email"/>
+            
+                    
+                    <textarea class="formInput" name="message" id="message" placeholder="Message"></textarea>
+                   
+            
+                      <button class="submitForm formInput" id="submit" type="submit"  placeholder="submit">Submit</button></form>
               </div>
             </header>
             
@@ -64,20 +87,10 @@
 
 
 
-    <form id="contactForm"  action="admin/scripts/sendEmail.php" method="POST">
-           
-        <input class="formInput" type="text" id="name" name="name" autocorrect="off" placeholder="Name?"/>
-
-      
-        <input class="formInput" type="email" name="email" id="email" autocapitalize="off" autocorrect="off" placeholder="Email?"/>
-
-        
-        <textarea class="formInput" name="message" id="message" placeholder="Message?"></textarea>
-       
-
-          <button class="submitForm" type="submit" >press</button>
+    
 
 </form>
+<script src="js/animation.js"></script>
 <script src="js/main.js"></script>      
 </body>
 </html>

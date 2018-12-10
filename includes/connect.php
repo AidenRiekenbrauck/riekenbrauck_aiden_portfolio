@@ -24,9 +24,6 @@
 
   $dsn = 'mysql:'.http_build_query($db_dsn,'',';');
 
- // FOR WHATEVER REASON, PDO REFUSES TO WORK ON MY SYSTEM ¯\_(ツ)_/¯
- // SO WE'RE FORCED TO USE AN OLD SCHOOL mysqli_connect ?????
-
   try {
   	$pdo = new PDO($dsn,$db_user,$db_pass);	
   } catch (PDOException $exception) {

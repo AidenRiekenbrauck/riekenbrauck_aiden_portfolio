@@ -32,27 +32,4 @@
   } catch (PDOException $exception) {
   	echo 'Found =>'.$exception.getMessage();
   }$conn = mysqli_connect('localhost', 'root', '', 'db_portfolio');
-
-// ONLINE CONNECTION
-//   $db_dsn = array(
-//   	'host' => 'aiden.aidenr.ca',
-//   	'dbname' => 'db_portfolio',
-//  	'charset' =>'utf8'
-//   );
-
-//   // Set up connection credentials
-//   $db_user = 'riekenbrauck';
-//   $db_pass = '!Google007';
-
-//  $dsn = 'mysql:'.http_build_query($db_dsn,'',';');
-
-
-
-//  try {
-//  	$pdo = new PDO($dsn,$db_user,$db_pass);	
-//  } catch (PDOException $exception) {
-//  	echo 'Found =>'.$exception.getMessage();
-
-//  }
-// $conn = mysqli_connect('aiden.aidenr.ca', 'riekenbrauck', '!Google007', 'db_portfolio')
 ?>

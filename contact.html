@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AidenR: Contact</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    
+
+</head>
+<body class="indexBody w3-black">
+    <div id="app">
+        
+        <div id="nav-btn" class="change" >
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          
+        <nav id="navbar" class="hide">
+        
+        <h1 class="hide">Header Navigation</h1>
+        
+        <!-- MOBILE -->
+        <ul class="nav-links">
+         <li><a class="nav-link blur1" href="index.html">Home</a></li> 
+         <li><a class="nav-link blur2" href="gallery.html">Gallery</a></li> 
+         <li><a class="nav-link blur2" href="video.html">Video</a></li> 
+         <li><a class="nav-link blur4" href="contact.html">Contact</a></li> 
+         <li><a class="nav-link blur5" href="about.html">About</a></li> 
+        </ul>
+        
+        </nav>
+
+        <nav class="navMain">
+    <h1 class="hide navMain">navigation scale</h1>
+    <ul class="navDesk">
+    <li><a class="navDeskLink" href="index.html">Home</a></li> 
+    <li><a class="navDeskLink" href="gallery.html">Gallery</a></li> 
+    <li><a class="navDeskLink" href="video.html">Video</a></li> 
+    <li><a class="navDeskLink" href="contact.html">Contact</a></li> 
+    <li><a class="navDeskLink" href="about.html">About</a></li> 
+   </ul>
+   
+</nav>
+        </div>
+        <div class="w3-center "style="height: 100px;width: 50px;z-index: 200;filter: invert(1);left: 10px; margin: 0 auto;padding-top: 5px; padding-bottom: -100px; position:absolute;">
+            <img src="images/logo.svg" alt="logo">
+    </div>
+            </div>
+            
+            <!-- Header -->
+            <header class=" w3-center">
+            
+
+
+              
+              <div class="profileImg">
+                  <div class="contactMe wow fadeIn"  data-wow-duration="3s">
+                      <h1>Contact Me</h1>
+                    </div>
+                  <form id="contactForm"  action="admin/scripts/sendEmail.php" method="POST">
+           
+                    <input class="formInput wow fadeInLeft" type="text" id="name" name="name" autocorrect="off" placeholder="Name" required/>
+            
+                  
+                    <input class="formInput wow fadeInRight" type="email" name="email" id="email" autocapitalize="off" autocorrect="off" placeholder="Email" required/>
+            
+                    
+                    <textarea class="formInput wow fadeInLeft" name="message" id="message" placeholder="Message" required></textarea>
+                   
+            
+                      <button class="submitForm formInput wow fadeInRight" id="submit" type="submit"  placeholder="submit">Submit</button></form>
+              </div>
+            </header>
+            
+
+
+
+
+
+            <section class="footer w3-center">   
+            <h1 class="hide">Footer</h1>
+          <ul>
+          <li class="socialIcon facebook"><a><img src="images/social_icons/Facebook.svg" alt=""></a></li>
+          <li class="socialIcon instagram"><a><img src="images/social_icons/Instagram.svg" alt=""></a></li>
+          <li class="socialIcon github"><a><img src="images/social_icons/Github.svg" alt=""></a></li>
+          <li class="socialIcon twitter"><a><img src="images/social_icons/Twitter.svg" alt=""></a></li>
+          <li class="socialIcon snapchat"><a><img src="images/social_icons/Snapchat.svg" alt=""></a></li>
+          </ul>
+          <h1 class="copyright">copyright@aidenr.ca</h1>
+          </section>
+
+
+
+
+    
+
+</form>
+<script src="js/animation.js"></script>
+<script src="js/main.js"></script>      
+</body>
+</html>

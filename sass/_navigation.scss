@@ -1,0 +1,56 @@
+.navMain
+{
+    display: none;
+}
+
+@media screen and (min-width: 64em) {
+
+.navMain
+{
+    z-index: 20;
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    padding: 5px 0px;
+    width: 100%;
+    background-color: rgba(92, 92, 92, 0.089);
+    margin: 0;
+}
+
+.navMain:hover
+{
+    transition-duration: .6s;
+}
+
+.navMain ul
+{
+    list-style-type: none;
+    text-align: right;
+}
+.navMain ul li
+{
+    display: inline-block;
+    margin: 0% 2%;
+}
+
+.navMain a
+{
+    color: white;
+    text-decoration: none;
+    font-family: sub_header;
+    font-size: 13px;
+  text-transform: uppercase;
+  transition-duration: 1s;
+}
+
+.navMain a:hover{
+color:goldenrod;
+}
+.navName
+{
+   margin-right: 800px;
+    font-family: sub_header;
+    padding: 0;
+    font-size: 8px;
+}
+}

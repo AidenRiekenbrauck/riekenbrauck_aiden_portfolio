@@ -1,27 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
-    
-</head>
-<body>
-   
-   
-<div class="main">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AidenR: Home</title>
 
-<h1 class="main">Online</h1>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/animate.css">
+</head>
+
+<body class="indexBody">
+  <video autoplay muted loop id="myVideo" class="w3-center">
+    <source src="video/logoanim2.mp4">
+  </video>
+
+    <div id="app">
+        
+        <div id="nav-btn" class="change" >
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          
+        <nav id="navbar" class="hide">
+        
+        <h1 class="hide">Header Navigation</h1>
+        
+        <!-- MOBILE -->
+        <ul class="nav-links">
+         <li><a class="nav-link blur1" href="index.html">Home</a></li> 
+         <li><a class="nav-link blur2" href="gallery.html">Gallery</a></li> 
+         <li><a class="nav-link blur2" href="video.html">Video</a></li> 
+         <li><a class="nav-link blur4" href="contact.html">Contact</a></li> 
+         <li><a class="nav-link blur5" href="about.html">About</a></li> 
+        </ul>
+        
+        </nav>
+
+        <nav class="navMain">
+    <h1 class="hide navMain">navigation scale</h1>
+    <ul class="navDesk">
+    <li><a class="navDeskLink wow fadeIn" data-wow-duration="1s" data-wow-delay=".1s" href="index.html">Home</a></li> 
+    <li><a class="navDeskLink wow fadeIn" data-wow-duration="1s" data-wow-delay=".2s" href="gallery.html">Gallery</a></li> 
+    <li><a class="navDeskLink wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s" href="video.html">Video</a></li> 
+    <li><a class="navDeskLink wow fadeIn" data-wow-duration="1s" data-wow-delay=".4s" href="contact.html">Contact</a></li> 
+    <li><a class="navDeskLink wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s" href="about.html">About</a></li> 
+   </ul>
+   
+</nav>
+        </div>
+    </div>
+	
+<main class="wrapper">
+    <div class="w3-center "style="height: 100px;width: 50px;z-index: 200;filter: invert(1);left: 10px; margin: 0 auto;padding-top: 5px; padding-bottom: -100px; position:absolute;">
+        <img src="images/logo.svg" alt="logo">
+</div>
+	<section class=" w3-center">
+<div class="w3-row indexMain">
+    <div class="w3-center indexCenter wow fadeIn" data-wow-duration="8s">
+    <h1 class="name">Aiden R</h1>
+   
+    <div class="nameDesc w3-center w3-container">
+    <p class=" biggerFont">Motion Designer</p>
+  </div>
+  <div id="arrow" class="w3-center">
+    <img src="images/arrow.svg" alt="arrow"  class=" bounce arrow">
+ </div>
+</div>
+  </section>
+
+
+
+
+  
+              </header>
+              
+<section class="w3-center wow fadeIn" data-wow-duration="4s" data-wow-offset="200">
+  <a href="#img1">
+    <h1 class="thumbnail">Highlight Reel</h1>
+  </a>
+  
+  <!-- lightbox container hidden with CSS -->
+  <a href="#_" class="lightbox" id="img1">
+    <video controls>
+<source src="video/reel.mp4"></video>
+    </video>
+  </a>
+</section>
+
+<section class="footer w3-center">   
+  <h1 class="hide">Footer</h1>
+<ul>
+<li class="proIcon wow fadeInUp" data-wow-offset="10"><a href="https://www.adobe.com/ca/creativecloud.html"><img src="images/program_icons/ps_icon.png" alt=""></a></li>
+<li class="proIcon wow fadeInUp" data-wow-offset="30"><a href="https://www.adobe.com/ca/creativecloud.html"><img src="images/program_icons/ai_icon.png" alt=""></a></li>
+<li class="proIcon wow fadeInUp" data-wow-offset="50"><a href="https://www.adobe.com/ca/creativecloud.html"><img src="images/program_icons/ae_icon.png" alt=""></a></li>
+<li class="proIcon wow fadeInUp" data-wow-offset="70"><a href="https://www.adobe.com/ca/creativecloud.html"><img src="images/program_icons/id_icon.png" alt=""></a></li>
+<li class="proIcon wow fadeInUp" data-wow-offset="90"><a href="https://www.adobe.com/ca/creativecloud.html"><img src="images/program_icons/pro_icon.png" alt=""></a></li>
+<li class="proIcon wow fadeInUp" data-wow-offset="110"><a href="https://www.maxon.net/en/"><img src="images/program_icons/c4d_icon.png" alt=""></a></li>
+<li class="proIcon wow fadeInUp" data-wow-offset="130"><a href="https://home.otoy.com/render/octane-render/"><img src="images/program_icons/octane_icon.png" alt=""></a></li>
+<li class="proIcon wow fadeInUp" data-wow-offset="150"><a href="https://insydium.ltd/"><img src="images/program_icons/x_icon.png" alt=""></a></li>
+<li class="proIcon wow fadeInUp" data-wow-offset="170"><a href="http://www.nextlimit.com/realflow/"><img src="images/program_icons/rf_icon.png" alt=""></a></li>
+</ul>
+</section>
+
+              <!-- About Section -->
+              <div class="w3-container  indexMain" style="padding:128px 16px" id="about">
+                <div class="w3-row-padding w3-center" style="margin-top:64px">
+                  <div class="w3-half whiteText indexSub">
+                    <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+                    <div id="bm2" class="w3-center"></div>
+                    <p class="w3-large whiteText subFont">3D Motion Design</p>
+                   
+                    <p class="indexAbout whiteText">All animations primarly in 3d with Cinema 4d using a variety of plugins. The newest plugin I am trying to get a better grasp of is X-particles. Most of rendering is done using Octane.</p>
+                  </div>
+                  <div class="w3-half whiteText indexSub">
+                    <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+                    <div id="bm" class="w3-center"></div>
+                    <p class="w3-large subFont">Graphic Design</p>
+                    <p class="indexAbout">Aside from motion design I also can do elements of graphic design ranging from branding to logo design to web design.</p>
+                  </div>
+                </div>
+
+                <section class="footer w3-center">   
+                  <h1 class="hide">Footer</h1>
+                <ul>
+                <li class="socialIcon facebook"><a href="https://www.facebook.com/aiden.riekenbrauck?ref=bookmarks"><img src="images/social_icons/Facebook.svg" alt=""></a></li>
+                <li class="socialIcon instagram"><a href="https://www.instagram.com/aids.r/?hl=en"><img src="images/social_icons/Instagram.svg" alt=""></a></li>
+                <li class="socialIcon github"><a href="https://github.com/AidenRiekenbrauck"><img src="images/social_icons/Github.svg" alt=""></a></li>
+                <li class="socialIcon twitter"><a href="https://twitter.com/AidenRiekenbrau"><img src="images/social_icons/Twitter.svg" alt=""></a></li>
+                </ul>
+                <h1 class="copyright">copyright@aidenr.ca</h1>
+                </section>
+                
+              
+              </div>
+                
+                  <h2><copyright@aidenr class="ca w3-center"></copyright@aidenr></h2>
+               
+
+
+              
+              </div>
+            </div>
+    
+              
+             
+
+
+	
+</main>
 
 </div>
- 
-
+<script src="js/bodymovin.js"></script>
+<script src="js/animation.js"></script>
+<script src="js/video.js"></script>
+<script src="js/main.js"></script>    
 </body>
-<script src="js/lottie.js" type="text/javascript"></script>
-<script src="js/main.js"></script>
-
-
-
 </html>

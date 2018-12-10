@@ -1,0 +1,556 @@
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.indexCenter
+{
+    margin-top: 55vh;
+}
+
+.biggerFont
+{
+    font-size: 20px;
+    color: white;
+}
+
+.name
+{
+    font-family: galleryHeader;
+    font-size: 10vw;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+.name2
+{
+display: none;
+}
+
+
+.nameDesc
+{
+   font-family: sub_header;
+   font-size: 10px;
+}
+.indexSubs
+{
+    position: absolute;
+    font-family: sub_header;
+    margin-left: 7%;
+    margin-top: 10vw;
+}
+
+.indexHeader{
+    background: black;
+}
+
+.proIcon img
+{
+    width: 30x;
+    height: 30px;
+}
+
+
+.proIcon
+{
+    margin: 20px 0px;
+    filter: grayscale(1);
+    transition-duration: .4s;
+    padding: 3px;
+}
+
+.proIcon:hover
+{
+    filter: grayscale(0);
+}
+
+.profileImg
+{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-position: center;
+    background-image: url(../images/contact_bckgrd.png);
+    background-repeat: no-repeat;
+    background-size: 1280px 720px;
+}
+
+#bm
+{
+    width: 80px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    filter: grayscale(1);
+}
+#about p
+{
+    color: white;
+}
+
+.aboutHeight
+{
+    margin-top: 100px;
+}
+
+
+#bm2
+{
+    width: 80px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    filter: grayscale(1);
+}
+
+#bm4
+{
+    height: 200px;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#bm3
+{
+    height: 250px;
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.indexAbout{
+    font-family: arial;
+    font-size: 14px;
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+}
+
+.indexMain
+{
+    height:100vh;
+    background-position: center;
+}
+
+.whiteText p, h5, h1
+{
+color: white; 
+}
+
+.blackBar
+{
+    height:100vh;
+    width: 5%;
+    right: 0;
+    position: absolute;
+}
+
+//about page
+
+
+
+
+.left
+{
+    text-align: right;
+}
+
+
+
+
+
+
+
+.topNav
+{
+    width: 100%;
+height: auto;
+grid-column: 2/4;
+    text-align: center;
+    display: block;
+}
+
+
+.mainBody
+{
+    
+    grid-column: 1 / 11;
+    grid-row: 3 / 14;
+    height: 100%;
+   width: 100%;
+   margin: 0 auto;
+   
+
+  
+}
+
+.textBody
+{
+    grid-column: 5 / 11;
+    grid-row: 10 / 14;
+    background-color: crimson;
+}
+
+.mobileName
+{
+    font-family: sub_header;
+}
+
+.galleryNumber h1
+{
+    font-size: 4rem;
+    margin: 0 auto;
+    padding: 0;
+    font-family: sub_header;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.mobileDesc{
+    font-family: sub_header;
+    font-size: .7em;
+    text-align: center;
+    width: 300px;
+    line-height: 20px;
+    margin: 0 auto;
+}
+
+
+
+
+
+//gallery Image responsiveness
+
+
+.mobileGallery{
+    width: 90%;
+    height: auto;
+    padding:0;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    transition-duration: .6s;
+    filter: grayscale(1);
+   
+}
+
+
+
+
+.mobileGallery img
+{
+    padding: 0;
+    margin: 0;
+    z-index: 5000;
+}
+
+.contentFeature
+{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.indexSub{
+margin-top: 40px;
+}
+
+@media screen and (min-width: 33.375em) {
+    .mobileGallery{
+        width: 500px;
+        height: auto;
+        padding:0;
+        display: block;
+        margin-top: 50px;
+    }
+    
+    .mobileGallery img
+    {
+        padding: 10px;
+        margin: 10px;
+    }
+    }
+  
+
+
+
+
+
+
+
+
+
+.topHeaderMobile
+{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: .5rem;
+    margin: 0 auto;
+    padding: 0;
+    grid-column: 2/4;
+}
+
+.logoMobile 
+{
+    width: 60px;
+    height: 60px;
+ display: inline-block;
+ margin-top: 5px;
+    
+}
+
+.projectName
+{
+    font-family: galleryHeader;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (min-width: 64.0625em) {
+
+
+
+    .mobileGallery{
+        width: 500px;
+        height: auto;
+        padding:0;
+        display: inline-block;
+        margin: 0 auto;
+        margin-top: 0px;
+      grid-column: 1/4;
+    }
+
+}
+
+
+@media screen and (min-width: 64em) {
+
+
+    .projectName{
+
+margin: 0 auto;
+padding: 0;
+padding-top: 50px;
+top: 20px;
+text-align: left;
+padding-left: 50px;
+
+}
+
+.projectName h2
+{
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+.topHeaderMobile
+{
+    width: 100%;
+    text-align: center;
+    font-size: .5rem;
+    margin: 0 auto;
+    padding: 0;
+    grid-column: 2/4;
+}
+
+
+.topNav
+{
+    width: 100%;
+height: auto;
+    text-align: center;
+    display: block;
+    grid-column: 1/5;
+    position: absolute;
+    opacity: .5;
+    padding: 0;
+}
+
+
+.mobileGallery{
+    width: 500px;
+    height: auto;
+    padding:0;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 0px;
+  grid-column: 1/4;
+  filter: grayscale(1);
+  transition-duration: 1s;
+}
+
+#nav-btn
+{
+    display: none;
+}
+
+.logo
+{
+position: absolute;
+height: 50px;
+width: 50px;
+}
+
+.logoImg
+{
+height: 50px;
+width: 50px;
+filter: invert(1);
+}
+
+.mobileName
+{
+    display: none;
+}
+
+
+
+.mobileGallery:hover
+{
+    filter: contrast(1.2);
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.names2 
+{
+    font-family: sub_header;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    top: 5px;
+
+    text-align: right;
+    width: 100%;
+    
+}
+
+.name2
+{
+    width: 100%; 
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+}
+
+
+
+.lightbox {
+	display: none;
+
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox video {
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 15vh;
+}
+
+.lightbox:target {
+	outline: none;
+	display: block;
+}
+
+.thumbnail
+{
+    font-family: galleryHeader;
+    font-size: 20px;
+    margin-top: 20vh; 
+    display: inline-block;
+    padding: 6px;
+    transition-duration: 1s;
+    border: 2px goldenrod solid;
+}
+
+.thumbnail:hover
+{
+    background-color: rgba(255, 196, 0, 0.658);
+    border-bottom: 1px goldenrod solid;
+}
+
+
+.lightbox2 {
+	display: none;
+
+	position: fixed;
+	z-index: 1009;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox2 video {
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 15vh;
+}
+
+.lightbox2:target {
+	outline: none;
+	display: block;
+}
+
+.thumbnail2
+{
+    font-family: galleryHeader;
+    font-size: 20px;
+    margin-top: 20vh; 
+    display: inline-block;
+    padding: 6px;
+    transition-duration: 1s;
+    border: 2px goldenrod solid;
+}
+
+.thumbnail2:hover
+{
+    background-color: rgba(255, 196, 0, 0.658);
+    border-bottom: 1px goldenrod solid;
+}
+
+.videoGap
+{
+    padding-top: 100px;
+}
+
+.resume a
+{
+    font-family: galleryHeader;
+    text-decoration: none;
+    border: 1px goldenrod solid;
+    padding: 5px;
+    transition-duration: .7s;
+}
+
+.resume a:hover
+{
+    background-color: gold;
+}
+
+.copyright 
+{
+    font-size: 10px;
+    font-family: sub_header;
+}

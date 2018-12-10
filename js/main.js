@@ -70,6 +70,16 @@ new WOW().init();
                      this.showItem41(data[40]);
                      this.showItem42(data[41]);
 
+                     this.showItem43(data[42]);
+                     this.showItem44(data[43]);
+                     this.showItem45(data[44]);
+                     this.showItem46(data[45]);
+                     this.showItem47(data[46]);
+                     this.showItem48(data[47]);
+                    
+                     
+                     
+
                     
                     
                 })
@@ -289,6 +299,40 @@ new WOW().init();
                 document.getElementById("mobile_particle6").src = `images/mobile_particle/${data.thumb_name}`;
                 
             },
+
+
+
+
+            showItem43(data) {
+                this.itemTitle = data.image_name;
+                document.getElementById("mobile_bottle").src = `images/mobile_bottle/${data.thumb_name}`;
+                
+            },
+            showItem44(data) {
+                this.itemTitle = data.image_name;
+                document.getElementById("mobile_bottle2").src = `images/mobile_bottle/${data.thumb_name}`;
+                
+            },       
+            showItem45(data) {
+                this.itemTitle = data.image_name;
+                document.getElementById("mobile_bottle3").src = `images/mobile_bottle/${data.thumb_name}`;
+                
+            },
+            showItem46(data) {
+                this.itemTitle = data.image_name;
+                document.getElementById("mobile_bottle4").src = `images/mobile_bottle/${data.thumb_name}`;
+                
+            },
+            showItem47(data) {
+                this.itemTitle = data.image_name;
+                document.getElementById("mobile_bottle5").src = `images/mobile_bottle/${data.thumb_name}`;
+                
+            },
+            showItem48(data) {
+                this.itemTitle = data.image_name;
+                document.getElementById("mobile_bottle6").src = `images/mobile_bottle/${data.thumb_name}`;
+                
+            },
          
 
            
@@ -372,7 +416,38 @@ previous.onclick = function(){ //function to go to next slide on svg click
 };
 
 
+document.addEventListener('keyup', function (event) {
 
+	const key = event.key || event.keyCode;
+
+	if (key === 'ArrowRight' || key === 39) {
+
+		// move to next slide
+
+		nextSlide();
+
+	} else if (key == 'ArrowLeft' || key === 37) {
+
+		// move to previous slide
+
+		previousSlide();
+
+	}
+
+});
+
+
+
+// Open the Modal
+function openModal() {
+    document.getElementById('myModal').style.display = "block";
+  }
+  
+  // Close the Modal
+  function closeModal() {
+    document.getElementById('myModal').style.display = "none";
+  }
+  
 
 
 
@@ -425,3 +500,4 @@ halkaBox.run("gallery4");
 halkaBox.run("gallery5");
 halkaBox.run("gallery6");
 halkaBox.run("gallery7");
+halkaBox.run("gallery8");

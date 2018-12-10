@@ -12,47 +12,47 @@
 // -- and vice versa
 
 // OFFLINE CONNECTION
-$db_dsn = array(
-	'host' => 'localhost',
-	'dbname' => 'db_portfolio',
-	'charset' =>'utf8'
-);
+  $db_dsn = array(
+  	'host' => 'localhost',
+  	'dbname' => 'db_portfolio',
+  	'charset' =>'utf8'
+  );
 
-// Set up connection credentials
-$db_user = 'root';
-$db_pass = '';
+   //Set up connection credentials
+  $db_user = 'root';
+  $db_pass = '';
 
-$dsn = 'mysql:'.http_build_query($db_dsn,'',';');
+  $dsn = 'mysql:'.http_build_query($db_dsn,'',';');
 
-// FOR WHATEVER REASON, PDO REFUSES TO WORK ON MY SYSTEM ¯\_(ツ)_/¯
-// SO WE'RE FORCED TO USE AN OLD SCHOOL mysqli_connect ?????
+ // FOR WHATEVER REASON, PDO REFUSES TO WORK ON MY SYSTEM ¯\_(ツ)_/¯
+ // SO WE'RE FORCED TO USE AN OLD SCHOOL mysqli_connect ?????
 
-// try {
-// 	$pdo = new PDO($dsn,$db_user,$db_pass);	
-// } catch (PDOException $exception) {
-// 	echo 'Found =>'.$exception.getMessage();
-// }
-
-$conn = mysqli_connect('localhost', 'root', '', 'db_portfolio');
+  try {
+  	$pdo = new PDO($dsn,$db_user,$db_pass);	
+  } catch (PDOException $exception) {
+  	echo 'Found =>'.$exception.getMessage();
+  }$conn = mysqli_connect('localhost', 'root', '', 'db_portfolio');
 
 // ONLINE CONNECTION
-// $db_dsn = array(
-// 	'host' => 'mysql.brendanrogers.online',
-// 	'dbname' => 'db_brendanrogers',
-// 	'charset' =>'utf8'
-// );
+//   $db_dsn = array(
+//   	'host' => 'aiden.aidenr.ca',
+//   	'dbname' => 'db_portfolio',
+//  	'charset' =>'utf8'
+//   );
 
-// // Set up connection credentials
-// $db_user = 'brendanrogers';
-// $db_pass = 'gui{EOR1!*-%-}';
+//   // Set up connection credentials
+//   $db_user = 'riekenbrauck';
+//   $db_pass = '!Google007';
 
-// $dsn = 'mysql:'.http_build_query($db_dsn,'',';');
+//  $dsn = 'mysql:'.http_build_query($db_dsn,'',';');
 
 
-// try {
-// 	$pdo = new PDO($dsn,$db_user,$db_pass);	
-// } catch (PDOException $exception) {
-// 	echo 'Found =>'.$exception.getMessage();
-// }
 
+//  try {
+//  	$pdo = new PDO($dsn,$db_user,$db_pass);	
+//  } catch (PDOException $exception) {
+//  	echo 'Found =>'.$exception.getMessage();
+
+//  }
+// $conn = mysqli_connect('aiden.aidenr.ca', 'riekenbrauck', '!Google007', 'db_portfolio')
 ?>

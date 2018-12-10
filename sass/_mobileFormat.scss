@@ -1,7 +1,19 @@
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.indexCenter
+{
+    margin-top: 55vh;
+}
+
 .biggerFont
 {
     font-size: 20px;
-    text-align: left;
+    color: white;
 }
 
 .name
@@ -10,7 +22,7 @@
     font-size: 10vw;
     padding: 0;
     margin: 0;
-    margin-top: 10vh;
+    color: white;
 }
 .name2
 {
@@ -22,8 +34,6 @@ display: none;
 {
    font-family: sub_header;
    font-size: 10px;
-   text-align: left;
-   margin-left: 15vw;
 }
 .indexSubs
 {
@@ -37,6 +47,37 @@ display: none;
     background: black;
 }
 
+.proIcon img
+{
+    width: 30x;
+    height: 30px;
+}
+
+
+.proIcon
+{
+    margin: 20px 0px;
+    filter: grayscale(1);
+    transition-duration: .4s;
+    padding: 3px;
+}
+
+.proIcon:hover
+{
+    filter: grayscale(0);
+}
+
+.profileImg
+{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-position: center;
+    background-image: url(../images/contact_bckgrd.png);
+    background-repeat: no-repeat;
+    background-size: 1280px 720px;
+}
+
 #bm
 {
     width: 80px;
@@ -45,6 +86,16 @@ display: none;
     padding: 0;
     filter: grayscale(1);
 }
+#about p
+{
+    color: white;
+}
+
+.aboutHeight
+{
+    margin-top: 100px;
+}
+
 
 #bm2
 {
@@ -78,13 +129,18 @@ display: none;
     font-size: 14px;
     width: 70%;
     margin: 0 auto;
+    color: white;
 }
 
 .indexMain
 {
     height:100vh;
-    background-image: url(../images/grid_bck.png);
     background-position: center;
+}
+
+.whiteText p, h5, h1
+{
+color: white; 
 }
 
 .blackBar
@@ -96,45 +152,17 @@ display: none;
 }
 
 //about page
-.insta{
-    width: 100%;
-}
 
-#pixlee_container
+
+
+
+.left
 {
-    width: 100px;
-}
-
-#powered_by_pixleec4bd65c6-f95a-60e8-8e78-939f4179e202
-{
-    display: none;
-}
-.profileImg
-{
-    width: 100%;
-    height: 100vh;
-    margin: 0 auto;
-    background-position: center;
-    background-image: url(../images/contact_bckgrd.png);
-    background-repeat: no-repeat;
-    background-size: 1280px 720px;
+    text-align: right;
 }
 
 
 
-.aboutImg
-{
-    width: 100%;
-    margin: 0 auto;
-    filter: invert(1);
-}
-
-.aboutImg img
-{
-    text-align: center;
-    width: 100%;
-    height: auto;
-}
 
 
 
@@ -229,20 +257,24 @@ grid-column: 2/4;
     text-align: center;
 }
 
+
+.indexSub{
+margin-top: 40px;
+}
+
 @media screen and (min-width: 33.375em) {
     .mobileGallery{
         width: 500px;
         height: auto;
         padding:0;
         display: block;
-        margin: 0 auto;
         margin-top: 50px;
     }
     
     .mobileGallery img
     {
-        padding: 0;
-        margin: 0;
+        padding: 10px;
+        margin: 10px;
     }
     }
   
@@ -364,9 +396,16 @@ height: auto;
 
 .logo
 {
-    position: absolute;
-    left: 50px;
-    padding: 0;
+position: absolute;
+height: 50px;
+width: 50px;
+}
+
+.logoImg
+{
+height: 50px;
+width: 50px;
+filter: invert(1);
 }
 
 .mobileName
@@ -404,4 +443,114 @@ height: auto;
     margin: 0;
     padding: 0;
 }
+}
+
+
+
+.lightbox {
+	display: none;
+
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox video {
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 15vh;
+}
+
+.lightbox:target {
+	outline: none;
+	display: block;
+}
+
+.thumbnail
+{
+    font-family: galleryHeader;
+    font-size: 20px;
+    margin-top: 20vh; 
+    display: inline-block;
+    padding: 6px;
+    transition-duration: 1s;
+    border: 2px goldenrod solid;
+}
+
+.thumbnail:hover
+{
+    background-color: rgba(255, 196, 0, 0.658);
+    border-bottom: 1px goldenrod solid;
+}
+
+
+.lightbox2 {
+	display: none;
+
+	position: fixed;
+	z-index: 1009;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox2 video {
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 15vh;
+}
+
+.lightbox2:target {
+	outline: none;
+	display: block;
+}
+
+.thumbnail2
+{
+    font-family: galleryHeader;
+    font-size: 20px;
+    margin-top: 20vh; 
+    display: inline-block;
+    padding: 6px;
+    transition-duration: 1s;
+    border: 2px goldenrod solid;
+}
+
+.thumbnail2:hover
+{
+    background-color: rgba(255, 196, 0, 0.658);
+    border-bottom: 1px goldenrod solid;
+}
+
+.videoGap
+{
+    padding-top: 100px;
+}
+
+.resume a
+{
+    font-family: galleryHeader;
+    text-decoration: none;
+    border: 1px goldenrod solid;
+    padding: 5px;
+    transition-duration: .7s;
+}
+
+.resume a:hover
+{
+    background-color: gold;
+}
+
+.copyright 
+{
+    font-size: 10px;
+    font-family: sub_header;
 }

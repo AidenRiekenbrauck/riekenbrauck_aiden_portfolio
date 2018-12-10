@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>AidenR: Contact</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <link href="css/main.css" rel="stylesheet" type="text/css">
 <link href="css/animate.css" rel="stylesheet" type="text/css">
@@ -50,6 +51,9 @@
    
 </nav>
         </div>
+        <div class="w3-center "style="height: 100px;width: 50px;z-index: 200;filter: invert(1);left: 10px; margin: 0 auto;padding-top: 5px; padding-bottom: -100px; position:absolute;">
+            <img src="images/logo.svg" alt="logo">
+    </div>
             </div>
             
             <!-- Header -->
@@ -64,16 +68,16 @@
                     </div>
                   <form id="contactForm"  action="admin/scripts/sendEmail.php" method="POST">
            
-                    <input class="formInput" type="text" id="name" name="name" autocorrect="off" placeholder="Name"/>
+                    <input class="formInput wow fadeInLeft" type="text" id="name" name="name" autocorrect="off" placeholder="Name" required/>
             
                   
-                    <input class="formInput" type="email" name="email" id="email" autocapitalize="off" autocorrect="off" placeholder="Email"/>
+                    <input class="formInput wow fadeInRight" type="email" name="email" id="email" autocapitalize="off" autocorrect="off" placeholder="Email" required/>
             
                     
-                    <textarea class="formInput" name="message" id="message" placeholder="Message"></textarea>
+                    <textarea class="formInput wow fadeInLeft" name="message" id="message" placeholder="Message" required></textarea>
                    
             
-                      <button class="submitForm formInput" id="submit" type="submit"  placeholder="submit">Submit</button></form>
+                      <button class="submitForm formInput wow fadeInRight" id="submit" type="submit"  placeholder="submit">Submit</button></form>
               </div>
             </header>
             
@@ -82,7 +86,17 @@
 
 
 
-
+            <section class="footer w3-center">   
+            <h1 class="hide">Footer</h1>
+          <ul>
+          <li class="socialIcon facebook"><a><img src="images/social_icons/Facebook.svg" alt=""></a></li>
+          <li class="socialIcon instagram"><a><img src="images/social_icons/Instagram.svg" alt=""></a></li>
+          <li class="socialIcon github"><a><img src="images/social_icons/Github.svg" alt=""></a></li>
+          <li class="socialIcon twitter"><a><img src="images/social_icons/Twitter.svg" alt=""></a></li>
+          <li class="socialIcon snapchat"><a><img src="images/social_icons/Snapchat.svg" alt=""></a></li>
+          </ul>
+          <h1 class="copyright">copyright@aidenr.ca</h1>
+          </section>
 
 
 

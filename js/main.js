@@ -27,6 +27,8 @@ new WOW().init();
                 fetch(url) // goes to the url
                 .then(res => res.json()) // takes that JSON file, turns it into a vanilla JS object
                 .then(data => { // data variable is the different rows from the PHP query that happens at the URL we fetch from
+
+                    //showing data 
                     this.showItem1(data[0]);
                     this.showItem2(data[1]);
                     this.showItem3(data[2]);
@@ -379,7 +381,7 @@ window.onload = function() {
     }
   };
 
-
+//slideshow start for gallery
 var controls = document.querySelectorAll('.controls');
 for(var i=0; i<controls.length; i++){
     controls[i].style.display = 'inline-block';
@@ -415,6 +417,9 @@ previous.onclick = function(){ //function to go to next slide on svg click
     previousSlide();
 };
 
+
+
+//use arrow keys to navigate through gallery slides
 
 document.addEventListener('keyup', function (event) {
 
@@ -492,7 +497,7 @@ halkaBox.options({
     isZoomable: true         // ability to zoom image (true || false)
 });
 
-
+//halkabox gallerys
 halkaBox.run("gallery1");
 halkaBox.run("gallery2");
 halkaBox.run("gallery3");

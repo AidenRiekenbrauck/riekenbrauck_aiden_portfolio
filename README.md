@@ -25,4 +25,6 @@ Step Four: test website in, ideally, Firefox. use link (http://localhost:8888/  
 
 >Shoutouts
 >Halkabox for the lightbox gallery |
->wow.js for their spicy transitions
+>wow.js for their spicy transitions |
+>Brendanrogers.online for helping out with back-end problems
+

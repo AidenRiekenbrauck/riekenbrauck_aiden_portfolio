@@ -13,11 +13,6 @@
 * X-Particles 4.0
 
 
-## Development
-* Vue.js	
-* Sass
-* Ajax
-
 > When compressing Scss with Visual Studio Code, input sass --watch sass:css --style compressed into terminal
 
 ## Installing
@@ -29,5 +24,5 @@ Step Three: place root folder into /MAMP/htdocs
 Step Four: test website in, ideally, Firefox. use link (http://localhost:8888/  **project name**  /) to enable database functions. 
 
 >Shoutouts
->Halkabox for the lightbox gallery
+>Halkabox for the lightbox gallery |
 >wow.js for their spicy transitions
